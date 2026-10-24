@@ -29,7 +29,10 @@
 defined('MOODLE_INTERNAL') || die;
 
 // The current module version (Date: YYYYMMDDXX).
-$plugin->version   = 2022051903;
+// Keep this at or above the version already stored for theme_eguru.
+// The database is on 2023011900; a lower value makes admin/cli/upgrade.php
+// abort with cannotdowngrade.
+$plugin->version   = 2023011900;
 
 // Version maturity level.
 $plugin->maturity = MATURITY_STABLE;
